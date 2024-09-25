@@ -1,4 +1,3 @@
-// Dependencies
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
@@ -6,11 +5,10 @@ import compression from 'compression';
 import cors from 'cors';
 import helmet from 'helmet';
 
-// Core
-import config from './config.mjs';
-import routes from './controllers/routes.mjs'; // Cela devrait inclure tous vos contrôleurs, y compris les nouveaux
 
-// Importation des contrôleurs supplémentaires
+import config from './config.mjs';
+import routes from './controllers/routes.mjs'; 
+
 import AlbumsController from './controllers/album.mjs';
 import PhotosController from './controllers/photo.mjs';
 
